@@ -2,113 +2,150 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My home town</title>
+  <title>Jiten Mehta - Techdegree project 3</title>
   <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!--- Main header start--->
+  <!--- Main header START--->
   <header class="main-header">
-    <h1 class="name"><a href="#">Leicester City</a></h1>
-    <ul class="main-nav">
-      <li><a href="#">LCFC</a></li>
-      <li><a href="#">Richard 3rd</a></li>
-      <li><a href="#">Pork Pies</a></li>
-      <li><a href="#">Walkers</a></li>
-    <ul>
+    <h1 class="name"><a href="#">The code review</a></h1>
   </header>
-  <!--- Main header end--->
 
-  <!--- Banner with image start--->
+    <!--- Main header END--->
 
-  <div class="banner">
-    <img class="logo" src="img/city-logo.svg" alt="Leicester City">
-    <h1 class="headline">Visit Leicester City</h1>
-    <span class=""tagline>Come and visit this historical city</span>
-  </div>
+    <!--- Main body of content START--->
 
-  <!--- Banner with image end--->
+  <div class="bodycontent">
 
-
-  <div class="row"><!-- Main content wrap--->
-
-    <!-- Column 1--->
-    <div class="primary col">
-      <img class="feat-img" src="img/treats.svg" alt="Treats">
-      <h2>LCFC</h2>
-      <p>Leicester City Football Club is an English professional football club based in Leicester.</p>
-      <p>The club competes in the Premier League, England's top division of football, and plays its home games at the King Power
-       Stadium.</p>
-       <p>Leicester City won the 2015–16 Premier League, their first top-level football championship.</p>
-       <p>They are one of only six clubs to have won the Premier League since its inception in 1992. A number of newspapers
-          described their title win as the greatest sporting shock ever, considering at the start of the season they were
-          favourites to face relegation.</p>
+  <!--- Intro START--->
+    <div class="intro">
+      <h2>Sign up for our newsletter</h2>
+      <p> Get the latest news on how your code is doing right in your inbox.</p>
     </div>
 
-      <!-- Column 2--->
+  <!--- Intro END--->
 
-      <div class="secondary col">
-        <h2>LCFC</h2>
-        <p>Leicester City Football Club is an English professional football club based in Leicester.</p>
-        <p>The club competes in the Premier League, England's top division of football, and plays its home games at the King Power
-         Stadium.</p>
-         <p>Leicester City won the 2015–16 Premier League, their first top-level football championship.</p>
-         <p>They are one of only six clubs to have won the Premier League since its inception in 1992. A number of newspapers
-            described their title win as the greatest sporting shock ever, considering at the start of the season they were
-            favourites to face relegation.</p>
-        <p>Multiple bookmakers had never paid out at such long odds for any sport.As a result, the team was dubbed
-           "The Unbelievables", a spin-off hearkening back to Arsenal's undefeated team "The Invincibles".</p>
+  <!--- Divider START--->
+
+    <div class="dividers">
+      <div class="divider1">
       </div>
-      <div class="tertiary col">
-          <h2>LCFC</h2>
-          <p>Leicester City Football Club is an English professional football club based in Leicester.</p>
-          <p>The club competes in the Premier League, England's top division of football, and plays its home games at the King Power
-           Stadium.</p>
-           <p>Leicester City won the 2015–16 Premier League, their first top-level football championship.</p>
-           <p>They are one of only six clubs to have won the Premier League since its inception in 1992. A number of newspapers
-              described their title win as the greatest sporting shock ever, considering at the start of the season they were
-              favourites to face relegation.</p>
-          <p>Multiple bookmakers had never paid out at such long odds for any sport.As a result, the team was dubbed
-             "The Unbelievables", a spin-off hearkening back to Arsenal's undefeated team "The Invincibles".</p>
-
+      <div class="divider2">
+      </div>
     </div>
+
+    <!--- Form START--->
+
+    <form action="index.html" method="post">
+
+      <h1>Contact Information</h1>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name" placeholder="Required" required>
+
+      <label for="email">Email Address:</label>
+      <input type="text" id="email" name="user_name" placeholder="Required" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="user_name">
+
+      <label for="address">Street Address:</label>
+      <input type="text" id="address" name="user_name">
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="user_name">
+
+      <label for="state">State</label>
+        <select id="state" name="user_state">
+        <optgroup label="Northeast">
+          <option value="connecticut">Connecticut</option>
+          <option value="maine">Maine</option>
+          <option value="massachusetts">Massachusetts</option>
+          <option value="rhode_island">Rhode Island</option>
+          <option value="vermont">Vermont</option>
+          <option value="new_jersey">New Jersey</option>
+          <option value="new_york">New York</option>
+          <option value="pennssylvania">Pennssylvania</option>
+        </optgroup>
+      <optgroup label="Midwest">
+          <option value="illnois">Illnois</option>
+          <option value="indiana">Indiana</option>
+          <option value="michigan">Michigan</option>
+          <option value="ohio">Ohio</option>
+          <option value="wisconsin">Wisconsin</option>
+          <option value="iowa">Iowa</option>
+          <option value="kansas">Kansas</option>
+          <option value="minnesota">Minesota</option>
+          <option value="missouri">Missouri</option>
+          <option value="nebraska">Nebraska</option>
+          <option value="north_dakota">North Dakota</option>
+          <option value="south_dakota">South Dakota</option>
+      </optgroup>
+      <optgroup label="South">
+        <option value="delaware">Delaware</option>
+        <option value="florida">Florida</option>
+        <option value="maryland">Maryland</option>
+        <option value="north_carolina">North Carolina</option>
+        <option value="south_carolina">South Carolina</option>
+        <option value="virginia">Virginia</option>
+        <option value="west_virginia">West Virginia</option>
+        <option value="alabama">Alabama</option>
+        <option value="kentucky">Kentucky</option>
+        <option value="mississipe">Mississipi</option>
+        <option value="tennessee">Tennessee</option>
+        <option value="arkansas">Arkansas</option>
+        <option value="louisiana">Louisiana</option>
+        <option value="oklahoma">Oklahoma</option>
+        <option value="texas">Texas</option>
+      <optgroup>
+        <optgroup label="West">
+        <option value="arizona">Arizona</option>
+        <option value="colorado">Colorado</option>
+        <option value="idaho">Idaho</option>
+        <option value="montana">Montana</option>
+        <option value="nevada">Nevada</option>
+        <option value="new_mexico">New Mexico</option>
+        <option value="utah">Utah</option>
+        <option value="wyoming">Wyoming</option>
+        <option value="alaska">Alaska</option>
+        <option value="california">California</option>
+        <option value="hawaii">Hawaii</option>
+        <option value="oregon">Oregon</option>
+        <option value="washington">Washington</option>
+        <option value="louisiana">Louisiana</option>
+        <option value="oklahoma">Oklahoma</option>
+        <optgroup>
+      </select>
+
+      <label for="zip-code">Zip code</label>
+      <input type="text" id="zip-code" name="user_name">
+
+    <!--- Form END--->
+
+
+
+
+
+
+
+
+
+
+
   </div>
 
-<!-- blurb section --->
-
-
-<div class="blurb">
-  <div class="blurb-primary blurb-col">
-    <h2>Welcome!</h2>
-    <p>Everything in this city is worth waiting in line for. Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans.</p>
-    <a class="button" href="#">Learn More</a>
-  </div><!--/.primary-->
-
-  <div class="blurb-secondary blurb-col">
-    <h2>Great food</h2>
-    <p>Croissant macaroon pie brownie. Cookie marshmallow liquorice gingerbread caramels toffee I love chocolate.</p>
-    <p>Wafer lollipop dessert. Bonbon jelly beans pudding dessert sugar plum.</p>
-    <a class="button" href="#">Learn More</a>
-  </div><!--/.secondary-->
-
-  <div class="blurb-tertiary blurb-col">
-    <h2>How to get here</h2>
-    <p><strong>Plane: </strong>Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop drag&#233;e cheesecake.</p>
-    <p><strong>Car: </strong>Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
-    <p><strong>Car: </strong>Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar plum chocolate cake pie I love pastry liquorice.</p>
-    <a class="button" href="#">Learn More</a>
-  </div><!--/.tertiary-->
-</div>
+    <!--- Main body of content END--->
 
 
 
+<footer class="main-footer">
 
+  <small><i>Copyright The view code</i><small>
 
-      <!-- Footer--->
-      <footer class="main-footer">
-        <span>&copy;2018 Leicester city.</span>
-      </footer>
+</footer>
+
 </body>
 </html>
