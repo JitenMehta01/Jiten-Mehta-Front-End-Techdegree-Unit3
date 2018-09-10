@@ -41,7 +41,7 @@
 
     <form action="index.html" method="post">
 
-      <h1>Contact Information</h1>
+      <h2>Contact Information</h2>
 
       <label for="name">Name:</label>
       <input type="text" id="name" name="user_name" placeholder="Required" required>
@@ -59,7 +59,8 @@
       <input type="text" id="city" name="user_name">
 
       <label for="state">State</label>
-        <select id="state" name="user_state">
+        <select id="state" name="user_state" placeholder="Select State">
+        <option disabled selected value="">Select State</option>
         <optgroup label="Northeast">
           <option value="connecticut">Connecticut</option>
           <option value="maine">Maine</option>
@@ -100,7 +101,7 @@
         <option value="louisiana">Louisiana</option>
         <option value="oklahoma">Oklahoma</option>
         <option value="texas">Texas</option>
-      <optgroup>
+      </optgroup>
         <optgroup label="West">
         <option value="arizona">Arizona</option>
         <option value="colorado">Colorado</option>
@@ -117,13 +118,40 @@
         <option value="washington">Washington</option>
         <option value="louisiana">Louisiana</option>
         <option value="oklahoma">Oklahoma</option>
-        <optgroup>
+      </optgroup>
       </select>
 
       <label for="zip-code">Zip code</label>
       <input type="text" id="zip-code" name="user_name">
+    </form>
 
     <!--- Form END--->
+
+    <!--- Divider START--->
+      <div class="divider2">
+      </div>
+
+
+    <!--- Divider END--->
+
+    <!--- Newsletter  START--->
+
+    <form action="index.html" method="post">
+      <h2> Newsletter</h2>
+      <label>Select the newspapers you would like to recieve</label>
+
+      <span class="checboxblock"><input type="checkbox" id="html_news" value="html_news_recieve" user="user_html_news">
+      <label for="html_news" class="checkboxlabel">HTML News</label></span>
+
+      <span class="checboxblock"><input type="checkbox" id="css_news" value="css_news_recieve" user="user_css_news">
+      <label for="css_news" class="checkboxlabel">CSS News</label></span>
+
+      <span class="checboxblock"><input type="checkbox" id="javascript_news" value="javascript_news_recieve" user="user_javascript_news">
+      <label for="css_news" class="checkboxlabel">Javascript News</label></span>
+
+    </form>
+
+
 
 
 
