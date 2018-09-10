@@ -27,12 +27,16 @@ p {
 
 
 h1,
-h2,
-h3
+h3,
+h2
 {
 font-size:1em;
 margin-top:0;
 margin-bottom:5px;
+}
+
+h2{
+  font-size:1.5em;
 }
 
 
@@ -79,7 +83,7 @@ img {
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
-  background-color:#1C1C1C;
+  background-color:#001a34
 }
 
 .intro{
@@ -92,14 +96,14 @@ img {
 }
 
 .divider1{
-  padding:5px 0;
-  background-color: #1C1C1C;
+  padding:3px 0;
+  background-color: #001a34
 }
 
 .divider2{
   margin-top:2px;
-  padding:2px 0;
-  background-color: #1C1C1C;
+  padding:1px 0;
+  background-color: #001a34
 }
 
 
@@ -117,14 +121,16 @@ img {
 
 form{
   text-align: left;
-  margin-top:20px;
+  margin:20px 0 20px 0;
 }
 
 label{
   display:block;
 }
 
-
+label[class="checkboxlabel"]{
+  display:inline;
+}
 /* =================================
   Form - type input styling
 ==================================== */
@@ -138,8 +144,12 @@ input[id="zip-code"]{
   width:30%;
 }
 
-input[placeholder="Required"]{
+input::placeholder{
   text-align:right;
+}
+
+.checboxblock{
+  display:block;
 }
 
 
