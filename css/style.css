@@ -20,7 +20,7 @@ ul {
 }
 p {
 	font-size: .85em;
-  color:#bdbdbd;
+  color:#696969;
   margin:0;
 }
 
@@ -87,7 +87,7 @@ margin: 20px 0 20px;
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
-  background-color:#2d3945
+  background-color:#2d3945;
 }
 
 .intro{
@@ -95,19 +95,22 @@ margin: 20px 0 20px;
   font-size:1.2em;
 }
 
-.intro p{
-  color:#939393
-}
 
 .divider1{
   padding:3px 0;
-  background-color: #2d3945
+  background-color: #2d3945;
 }
 
 .divider2{
   margin-top:2px;
   padding:1px 0;
-  background-color: #2d3945
+  background-color: #2d3945;
+}
+
+.divider3{
+  margin-top:2px;
+  padding:1px 0;
+  background-color: #2d3945;
 }
 
 
@@ -130,6 +133,8 @@ form{
 
 label{
   display:block;
+  color:#696969;
+  margin-bottom:10px;
 }
 
 label[class="checkboxlabel"]{
@@ -151,6 +156,10 @@ cursor:pointer;
 button:hover{
   background-color: #68d0ca;
 }
+
+option:nth-child(odd){
+  background-color: #A9A9A9;
+}
 /* =================================
   Form - type input styling
 ==================================== */
@@ -161,11 +170,12 @@ input[type="text"]{
 }
 
 input[id="zip-code"]{
-  width:30%;
+  width:50%;
 }
 
 input::placeholder{
   text-align:right;
+  font-style:italic;
 }
 
 .checboxblock{
@@ -175,12 +185,58 @@ input::placeholder{
 #topic{
   width:100%;
   height:100px;
+  border:none;
+  background-color:#D3D3D3;
 }
+
+input[type^="text"],
+select
+{
+  background-color:#D3D3D3;
+  padding:10px;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus{
+  border: 2px solid  #2d3945;
+}
+
+
+select:focus{
+  border: 2px solid  #2d3945;
+}
+
+select{
+  width:100%;
+}
+
+input[type="checkbox"]{
+  background-color: #4ebbb5;
+}
+
+input[type="radio"]{
+  background-color: #4ebbb5;
+}
+
 
 /* =================================
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
-
+form{
+  max-width:700px;
+  margin:0 auto;
+}
+.divider2{
+  margin-bottom:25px;
+}
+.divider3{
+  margin-top:25px;
+}
+button{
+  width:30%;
+  margin:0 auto;
+  display:block;
+}
 }
