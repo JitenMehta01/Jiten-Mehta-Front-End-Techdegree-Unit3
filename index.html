@@ -137,6 +137,7 @@
     <!--- Newsletter  START--->
 
     <form action="index.html" method="post">
+      <div class="newsletter">
       <h2> Newsletter</h2>
       <label>Select the newspapers you would like to recieve</label>
 
@@ -148,10 +149,30 @@
 
       <span class="checboxblock"><input type="checkbox" id="javascript_news" value="javascript_news_recieve" user="user_javascript_news">
       <label for="css_news" class="checkboxlabel">Javascript News</label></span>
+    </div>
+
+      <div class="newsletter">
+      <h2>Newsletter Format</h2>
+
+      <span class="checboxblock"><input type="radio" id="html" value="html" name="user_newsletter_format">
+      <label for="html" class="checkboxlabel">HTML</label></span>
+      <span class="checboxblock"><input type="radio" id="plain_text" value="plain_text" name="user_newsletter_format">
+      <label for="plain_text" class="checkboxlabel">Plain text</label></span>
+    </div>
+
+      <div class="newsletter">
+      <h2>Other topics you'd like to hear about</h2>
+
+      <textarea id="topic" name="user_topic"></textarea>
+    </div>
+
+    <button type="submit">Sign Up</button>
 
     </form>
 
 
+
+  <!--- Newsletter  END--->
 
 
 
