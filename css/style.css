@@ -186,15 +186,16 @@ input::placeholder{
   width:100%;
   height:100px;
   border:none;
-  background-color:#D3D3D3;
+  background-color:#DCDCDC;
 }
 
 input[type^="text"],
 select
 {
-  background-color:#D3D3D3;
+  background-color:#DCDCDC;
   padding:10px;
   border-radius: 4px;
+  border:none;
 }
 
 input[type="text"]:focus{
@@ -224,7 +225,11 @@ input[type="radio"]{
 ==================================== */
 
 @media (min-width: 769px) {
-form{
+form,
+.divider1,
+.divider2,
+.divider3
+{
   max-width:700px;
   margin:0 auto;
 }
@@ -234,9 +239,29 @@ form{
 .divider3{
   margin-top:25px;
 }
-button{
-  width:30%;
-  margin:0 auto;
-  display:block;
+
+label[for="name"]
+{
+  display:inline;
 }
+
+input[type="text"]{
+  width:90%;
+}
+
+
+
+/** Flex containers and items**/
+
+.desktoptextfields{
+  padding:20px 0;
+  display:flex;
+}
+
+label[for="name"]{
+  align-self:flex-start;
+}
+
+input[id="name"]{
+  align-self:flex-end;
 }
