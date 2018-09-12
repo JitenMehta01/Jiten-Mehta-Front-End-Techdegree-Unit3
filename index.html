@@ -44,26 +44,40 @@
 
 
       <h2>Contact Information</h2>
-      <div class="contactext">
+
+<div class="contactext">
+
       <div class="desktoptextfields">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="user_name" placeholder="Required" required>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="Required" required>
       </div>
+
+      <div class="desktoptextfields">
       <label for="email">Email Address:</label>
       <input type="text" id="email" name="user_name" placeholder="Required" required>
+      </div>
 
+      <div class="desktoptextfields">
       <label for="phone">Phone Number:</label>
       <input type="text" id="phone" name="user_name">
+      </div>
 
+      <div class="desktoptextfields">
       <label for="address">Street Address:</label>
       <input type="text" id="address" name="user_name">
+      </div>
 
-      <label for="city">City</label>
+      <div class="desktoptextfields">
+      <label for="city">City:</label>
       <input type="text" id="city" name="user_name">
       </div>
-      <label for="state">State</label>
+
+</div>
+
+      <div class="desktoptextfields">
+      <label for="state">State:</label>
         <select id="state" name="user_state" placeholder="select-state">
-        <option disabled selected value="">Select State</option>
+        <option disabled selected value="choose-state">Choose State</option>
         <optgroup label="Northeast">
           <option value="connecticut">Connecticut</option>
           <option value="maine">Maine</option>
@@ -123,9 +137,15 @@
         <option value="oklahoma">Oklahoma</option>
       </optgroup>
       </select>
+    </div>
 
-      <label for="zip-code">Zip code</label>
-      <input type="text" id="zip-code" name="user_name">
+    <div class="desktoptextfields">
+
+      <label for="zip-code">Zip code:</label>
+      <div class="zip-code">
+        <input type="text" id="zip-code" name="user_name">
+      </div>
+    </div>
     </form>
 
     <!--- Form END--->
@@ -144,7 +164,7 @@
       <h2> Newsletter</h2>
       <label>Select the newspapers you would like to recieve</label>
 
-      <span class="checboxblock"><input type="checkbox" id="html_news" value="html_news_recieve" user="user_html_news">
+      <span class="checboxblock"><input type="checkbox" id="html_news" value="html_news_recieve" user="user_html_news" checked>
       <label for="html_news" class="checkboxlabel">HTML News</label></span>
 
       <span class="checboxblock"><input type="checkbox" id="css_news" value="css_news_recieve" user="user_css_news">
@@ -157,7 +177,7 @@
       <div class="newsletter">
       <label>Newsletter Format</label>
 
-      <span class="checboxblock"><input type="radio" id="html" value="html" name="user_newsletter_format">
+      <span class="checboxblock"><input type="radio" id="html" value="html" name="user_newsletter_format" checked>
       <label for="html" class="checkboxlabel">HTML</label></span>
       <span class="checboxblock"><input type="radio" id="plain_text" value="plain_text" name="user_newsletter_format">
       <label for="plain_text" class="checkboxlabel">Plain text</label></span>
@@ -186,8 +206,7 @@
 
 
 
-
-  </div>
+</div>
 
     <!--- Main body of content END--->
 
