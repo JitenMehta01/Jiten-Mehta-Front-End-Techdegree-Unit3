@@ -122,6 +122,16 @@ margin: 20px 0 20px;
   color:#bdbdbd;
 }
 
+fieldset{
+  border:none;
+  padding-left:0;
+}
+
+legend{
+  font-size:1.4em;
+  font-weight:600;
+}
+
 /* =================================
   Form - base styling
 ==================================== */
@@ -160,6 +170,15 @@ button:hover{
 
 option:nth-child(odd){
   background-color: #A9A9A9;
+}
+
+.divider3{
+  margin-top:30px;
+}
+
+.newslettersection{
+
+background-color: #ADD8E6;
 }
 /* =================================
   Form - type input styling
@@ -225,7 +244,7 @@ input[type=checkbox]{
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
 label{
   padding-top:0;
