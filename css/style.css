@@ -67,11 +67,17 @@ img {
 }
 
 
-.newsletter{
-margin: 20px 0 20px;
+.newslettersection{
+  text-align: left;
+margin:0;
+padding:0;
+background-color: #4ebbb5
 }
 
+.newsletter{
+padding: 15px;
 
+}
 /* ---- Layout Containers ---- */
 
 .bodycontent{
@@ -118,7 +124,6 @@ margin: 20px 0 20px;
 	padding: 2em 0;
 	margin-top: 30px;
   text-align: center;
-  text-decoration:
   color:#bdbdbd;
 }
 
@@ -131,6 +136,8 @@ legend{
   font-size:1.4em;
   font-weight:600;
 }
+
+
 
 /* =================================
   Form - base styling
@@ -161,7 +168,7 @@ background-color: #4ebbb5;
 font-family: initial;
 width:100%;
 cursor:pointer;
-border-style:none;
+border-color: #fff;
 }
 
 button:hover{
@@ -176,9 +183,20 @@ option:nth-child(odd){
   margin-top:30px;
 }
 
-.newslettersection{
+.section1{
+  padding-bottom:25px;
+  box-shadow: 0 5px 10px
+  rgba(178,76,76,0.3),
+    0 6px 6px
+    rgba(0,0,0,0.23);
+}
 
-background-color: #ADD8E6;
+.fieldstyling{
+  padding:0 15px 0 15px;
+}
+
+textarea{
+  margin-bottom:15px;
 }
 /* =================================
   Form - type input styling
@@ -186,8 +204,20 @@ background-color: #ADD8E6;
 
 input[type="text"]{
   width:100%;
+  transition: border 1s ease-in;
+  transition: background-color 1s  ease-in;
 
 }
+
+input[type="text"]:focus{
+ background-color: #4ebbb5;
+   border:2px solid #2d3945;
+}
+
+input[type="text"]{
+  width:80%;
+}
+
 
 input[id="zip-code"]{
   width:50%;
@@ -219,9 +249,6 @@ select
   border:none;
 }
 
-input[type="text"]:focus{
-  border: 2px solid  #2d3945;
-}
 
 
 select:focus{
@@ -246,9 +273,6 @@ input[type=checkbox]{
 
 @media (min-width: 768px) {
 
-label{
-  padding-top:0;
-}
 
 .bodycontent{
   max-width:700px;
@@ -264,7 +288,7 @@ label{
   margin-bottom:25px;
 }
 .divider3{
-  margin-top:25px;
+  margin-top:0px;
 }
 
 label[for="name"]
@@ -272,9 +296,9 @@ label[for="name"]
   display:inline;
 }
 
-input[type="text"]{
-  width:80%;
-}
+
+
+
 
 .zip-code{
   width:80%;
@@ -318,5 +342,10 @@ select{
   margin-left:auto;
 }
 
+
+
+form{
+  margin-bottom:0px;
+}
 
 }
