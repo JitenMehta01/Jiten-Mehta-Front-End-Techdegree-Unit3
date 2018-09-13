@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang-"en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jiten Mehta - Techdegree project 3</title>
@@ -43,8 +43,9 @@
 
 
 
-      <h2>Contact Information</h2>
 
+  <fieldset>
+    <legend>Contact Information</legend>
 <div class="contactext">
 
       <div class="desktoptextfields">
@@ -64,12 +65,12 @@
 
       <div class="desktoptextfields">
       <label for="address">Street Address:</label>
-      <input type="text" id="address" name="user_name">
+      <input type="text" id="address" name="user_name" placeholder="Required" required>
       </div>
 
       <div class="desktoptextfields">
       <label for="city">City:</label>
-      <input type="text" id="city" name="user_name">
+      <input type="text" id="city" name="user_name"  placeholder="Required" required>
       </div>
 
 </div>
@@ -143,11 +144,12 @@
 
       <label for="zip-code">Zip code:</label>
       <div class="zip-code">
-        <input type="text" id="zip-code" name="user_name">
+        <input type="text" id="zip-code" name="user_name" placeholder="Required" required>
       </div>
     </div>
-    </form>
+  </fieldset>
 
+  <fieldset class="newslettersection">
     <!--- Form END--->
 
     <!--- Divider START--->
@@ -159,27 +161,31 @@
 
     <!--- Newsletter  START--->
 
-    <form action="index.html" method="post">
       <div class="newsletter">
-      <h2> Newsletter</h2>
+      <legend> Newsletter</legend>
       <label>Select the newspapers you would like to recieve</label>
 
-      <span class="checboxblock"><input type="checkbox" id="html_news" value="html_news_recieve" user="user_html_news" checked>
+      <span class="checboxblock">
+        <input type="checkbox" id="html_news" value="html_news_recieve" user="user_html_news" checked name="html_news">
       <label for="html_news" class="checkboxlabel">HTML News</label></span>
 
-      <span class="checboxblock"><input type="checkbox" id="css_news" value="css_news_recieve" user="user_css_news">
+      <span class="checboxblock">
+        <input type="checkbox" id="css_news" value="css_news_recieve" user="user_css_news" name="css_news">
       <label for="css_news" class="checkboxlabel">CSS News</label></span>
 
-      <span class="checboxblock"><input type="checkbox" id="javascript_news" value="javascript_news_recieve" user="user_javascript_news">
+      <span class="checboxblock">
+        <input type="checkbox" id="javascript_news" value="javascript_news_recieve" user="user_javascript_news" name="javascript_news">
       <label for="css_news" class="checkboxlabel">Javascript News</label></span>
     </div>
 
       <div class="newsletter">
       <label>Newsletter Format</label>
 
-      <span class="checboxblock"><input type="radio" id="html" value="html" name="user_newsletter_format" checked>
+      <span class="checboxblock">
+        <input type="radio" id="html" value="html" name="user_newsletter_format" checked name="radio_html">
       <label for="html" class="checkboxlabel">HTML</label></span>
-      <span class="checboxblock"><input type="radio" id="plain_text" value="plain_text" name="user_newsletter_format">
+      <span class="checboxblock">
+        <input type="radio" id="plain_text" value="plain_text" name="user_newsletter_format" name="radio_plain_text">
       <label for="plain_text" class="checkboxlabel">Plain text</label></span>
     </div>
 
@@ -187,10 +193,11 @@
       <label>Other topics you'd like to hear about</label>
 
       <textarea id="topic" name="user_topic"></textarea>
+
     </div>
 
     <button type="submit">Sign Up</button>
-
+</fieldset>
     </form>
 
 
