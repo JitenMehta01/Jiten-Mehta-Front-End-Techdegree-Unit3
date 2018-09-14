@@ -71,11 +71,11 @@ img {
   text-align: left;
 margin:0;
 padding:0;
-background-color: #4ebbb5
 }
 
 .newsletter{
 padding: 15px;
+background-color:#DCDCDC;
 
 }
 /* ---- Layout Containers ---- */
@@ -146,6 +146,10 @@ legend{
 form{
   text-align: left;
   margin:20px 0 20px 0;
+  box-shadow: 0 5px 10px
+  rgba(178,76,76,0.3),
+    0 6px 6px
+    rgba(0,0,0,0.23);
 }
 
 label{
@@ -185,10 +189,6 @@ option:nth-child(odd){
 
 .section1{
   padding-bottom:25px;
-  box-shadow: 0 5px 10px
-  rgba(178,76,76,0.3),
-    0 6px 6px
-    rgba(0,0,0,0.23);
 }
 
 .fieldstyling{
@@ -204,14 +204,14 @@ textarea{
 
 input[type="text"]{
   width:100%;
-  transition: border 1s ease-in;
+  transition: border 5s ease-in;
   transition: background-color 1s  ease-in;
 
 }
 
 input[type="text"]:focus{
  background-color: #4ebbb5;
-   border:2px solid #2d3945;
+   border:1px solid #2d3945;
 }
 
 input[type="text"]{
@@ -238,6 +238,8 @@ input::placeholder{
   max-height:250px;
   border:none;
   background-color:#DCDCDC;
+  border: 1px solid #000;
+
 }
 
 input[type^="text"],
